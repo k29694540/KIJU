@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTPOLIO</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">PORTPOLIO</h2>
+            <div class="toggle"></div>
+        </header>
+        <video src="video/1.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>WELCOME TO</h2>
+            <h3>KIJU World</h3>
+            <p>Photo shop | Illustrator | Premiere Pro | After Effect</p>
+                <a href="shift/graphic.html">Explore</a>
+        </div>
+
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="shift/graphic.html">Graphic Design</a></li>
+            <li><a href="shift/Videos.html">Videos</a></li>
+            <li><a href="shift/contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle=document.querySelector('.toggle');
+        const showcase=document.querySelector('.showcase');
+        
+        menuToggle.addEventListener('click',() => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
